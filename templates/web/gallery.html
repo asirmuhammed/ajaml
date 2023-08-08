@@ -1,0 +1,73 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+
+        {% comment %} <!-- Page title -->
+        <section id="page-title" data-bg-parallax="{% static 'web/images/parallax/5.jpg' %}">
+            <div class="container">
+                <div class="page-title">
+                    <h1>Gallery 2 Columns</h1>
+                    <span>Description</span>
+                </div>
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li><a href="#">Pages</a>
+                        </li>
+                        <li class="active"><a href="#">Gallery 2 Columns</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end: Page title --> {% endcomment %}
+        <!-- Content -->
+        <section id="page-content">
+            <div class="container">
+                <!-- Gallery -->
+                <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
+                    {% for gallery in gallery %}
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{{gallery.picture.url}}" data-lightbox="gallery-image"><img src="{{gallery.picture.url}}"></a>
+                    </div>
+                    {% comment %} <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/2.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/2.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/3.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/3.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/4.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/4.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/5.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/5.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/6.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/6.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/7.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/7.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/8.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/8.jpg' %}"></a>
+                    </div>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom" href="{% static 'web/images/gallery/9.jpg' %}" data-lightbox="gallery-image"><img src="{% static 'web/images/gallery/9.jpg' %}"></a>
+                    </div> {% endcomment %}
+                    {% endfor %}
+                </div>
+                <!-- end: Gallery -->
+                <!-- Load next gallery items -->
+                <div id="pagination" class="infinite-scroll">
+                    <a href="page-gallery-load-more-2.html"></a>
+                </div>
+                <!-- end:Load next gallery items -->
+            </div>
+        </section> <!-- end: Content -->
+
+
+
+{% endblock %}
+        

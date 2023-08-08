@@ -1,0 +1,417 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Inspiro Slider -->
+        <div id="slider" class="inspiro-slider slider-halfscreen dots-dark arrows-dark dots-creative" data-fade="true" data-height-xs="360">
+
+            <!-- Slide 1 -->
+            <div class="slide background-image" style="background-image:url('{% static 'web/homepages/business/images/slide1.jpg' %}');">
+                <div class="container">
+                    <div class="slide-captions text-right">
+                        <!-- Captions -->
+                        <span class="strong text-dark">Ajmal TP</span>
+                        <h2  class="text-dark text-bg">Free-thinking Fusionpreneur </h2>
+                        <a class="btn btn-dark" href="{% url 'web:contact' %}" >Get in Touch</a>
+                        <!-- end: Captions -->
+                    </div>
+                </div>
+            </div>
+            <!-- end: Slide 1 -->
+
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image:url('{% static 'web/homepages/business/images/slide2.jpg' %}');">
+                <div class="container">
+                    <div class="slide-captions text-right">
+                        <!-- Captions -->
+                        <span class="strong text-dark">Ajmal TP</span>
+                        <h2 class="text-dark text-lg">Concept Consultant  </h2>
+                        <a class="btn btn-dark" href="{% url 'web:contact' %}" >Get in Touch</a>
+                        <!-- end: Captions -->
+                    </div>
+                </div>
+            </div>
+            <!-- end: Slide 2 -->
+
+
+            <!-- Slide 3 -->
+            <div class="slide background-image" style="background-image:url('{% static 'web/homepages/business/images/slide1.jpg' %}');">
+                <div class="container">
+                    <div class="slide-captions text-right">
+                        <!-- Captions -->
+                        <span class="strong text-dark">Ajmal TP</span>
+                        <h2 class="text-dark text-lg">Performing Presenter</h2>
+                        <a class="btn btn-dark" href="{% url 'web:contact' %}" >Get in Touch</a>
+                        <!-- end: Captions -->
+                    </div>
+                </div>
+            </div>
+            <!-- end: Slide 3 -->
+
+
+        </div>
+        <!--end: Inspiro Slider -->
+
+
+        <!-- MISSION & VISSION -->
+        <section class="box-fancy section-fullwidth text-light no-padding">
+            <div class="row">
+                <div class="col-lg-6 text-right" style="background-color: #ffc107">
+                    <h2>OUR MISSION</h2>
+                    <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. </span>
+                </div>
+
+                <div class="col-lg-6 text-left" style="background-color: #ffc107c4">
+                    <h2>OUR VISSION</h2>
+                    <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. </span>
+                </div>
+            </div>
+        </section>
+        <!-- end: MISSION & VISSION -->
+
+        <!-- WHAT WE DO -->
+        <section>
+            <div class="container">
+
+                <div class="heading-text heading-section m-b-80">
+                    <h2>WHAT WE DO</h2>
+                </div>
+
+                <div class="row">
+                    {% for nutshell in nutshell %}
+                    <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="fa fa-car"></i></a> </div>
+                            <h4>{{nutshell.heading}}</h4>
+                            <p>{{nutshell.detail}}</p>
+                        </div>
+                    </div>
+                    {% comment %} <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="fa fa-heart"></i></a> </div>
+                            <h4>Flexible Layouts</h4>
+                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="far fa-lightbulb"></i></a> </div>
+                            <h4>Retina Ready</h4>
+                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="fa fa-phone"></i></a> </div>
+                            <h4>100% Responsive Layout</h4>
+                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="fa fa-code"></i></a> </div>
+                            <h4>Clean Modern Code</h4>
+                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-box medium fancy">
+                            <div class="icon"> <a href="#"><i class="fa fa-life-ring"></i></a> </div>
+                            <h4>Free Updates & Support</h4>
+                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
+                        </div>
+                    </div> {% endcomment %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- END WHAT WE DO -->
+
+         <!-- COUNTERS -->
+        {% comment %} <section class="text-center background-image p-t-200 p-b-100" style="background-image: url({% static 'web/homepages/business/images/parallax/2.jpg' %}); background-position:bottom left;"> {% endcomment %}
+            <div class="container">
+                <div class="row">
+                    <div class="heading-text heading-section m-b-150">
+                        
+                        <h2>GROWTH YOUR BUSINESS!</h2>
+                        {% comment %} <span class="lead">Beautiful nature, and rare feathers!. amam ipsum dolor sit amet.</span> {% endcomment %}
+                        <p id="p" >Clear Business Strategy: Develop a well-defined and adaptable business strategy that outlines your goals, target market,</p>
+                        <p id="p" >Customer Focus: Understand your customers' needs and preferences to tailor your products/services and marketing efforts accordingly.</p>
+                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+
+                        <div class="text-center">
+
+                            
+                            <div class="icon"><i class="fa fa-3x fa-code"></i></div>
+                            <div class="counter"> <span data-speed="3000" data-refresh-interval="50" data-to="12416" data-from="600" data-seperator="true"></span><h3>2015-2018</h3> </div>
+                            <div class="seperator seperator-small"></div>
+                            <p><h4>Finishing Versity Founding Chief</h4></p> 
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+
+                        <div class="text-center">
+
+                            
+                            <div class="icon"><i class="fa fa-3x fa-coffee"></i></div>
+                            <div class="counter"> <span data-speed="4500" data-refresh-interval="23" data-to="365" data-from="100" data-seperator="true"></span> <h3>2015-2018</h3></div>
+                            <div class="seperator seperator-small"></div>
+                            <p><h4>Career Guru Administrator </h4></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+
+                        <div class="text-center">
+
+                            
+                            <div class="icon"><i class="fa fa-3x fa-rocket"></i></div>
+                            <div class="counter"> <span data-speed="3000" data-refresh-interval="12" data-to="114" data-from="50" data-seperator="true"></span><h3>2015-2018</h3> </div>
+                            <div class="seperator seperator-small"></div>
+                            <p><h4>Book Ramp Publisher</h4> </p>
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+            <br><br><br><br>
+            
+        {% comment %} </section> {% endcomment %}
+        <!-- end: COUNTERS --> 
+
+
+
+
+        {% comment %} <div class="container">
+            <div class="row">
+                <div class="heading-text heading-section m-b-200">
+                    <h2>GROWTH YOUR BUSINESS!</h2>
+                    <span class="lead">Beautiful nature, and rare feathers!. amam ipsum dolor sit amet.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+
+                    <div class="text-center">
+                        <div class="icon"><i class="fa fa-3x fa-code"></i></div>
+                        <div class="counter"> <span data-speed="3000" data-refresh-interval="50" data-to="12416" data-from="600" data-seperator="true"></span> </div>
+                        <div class="seperator seperator-small"></div>
+                        <p>LINES OF CODE</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center">
+
+                    <div class="text-center">
+                        <div class="icon"><i class="fa fa-3x fa-coffee"></i></div>
+                        <div class="counter"> <span data-speed="4500" data-refresh-interval="23" data-to="365" data-from="100" data-seperator="true"></span> </div>
+                        <div class="seperator seperator-small"></div>
+                        <p>CUPS OF COFFEE</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center">
+
+                    <div class="text-center">
+                        <div class="icon"><i class="fa fa-3x fa-rocket"></i></div>
+                        <div class="counter"> <span data-speed="3000" data-refresh-interval="12" data-to="114" data-from="50" data-seperator="true"></span> </div>
+                        <div class="seperator seperator-small"></div>
+                        <p>FINISHED PROJECTS</p>
+                    </div>
+                </div> {% endcomment %}
+
+        <!-- WHY CHOOSE US -->
+        {% comment %} <section>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="heading-text heading-section m-b-60">
+                            <h2>WHAT CHOOSE US</h2>
+                        </div>
+                        <div class="accordion toggle fancy clean accordion-transparent">
+                            <div class="ac-item">
+                                <h5 class="ac-title">WORLDWIDE BUSINESS COMPANY</h5>
+                                <div class="ac-content" style="display: none;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                            </div>
+                            <div class="ac-item">
+                                <h5 class="ac-title">IDENTIFY SMALL BUSINESS PAIN POINTS</h5>
+                                <div class="ac-content" style="display: none;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                            </div>
+                            <div class="ac-item ac-active">
+                                <h5 class="ac-title">YOUR DATA ARE SECURE</h5>
+                                <div class="ac-content">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                            </div>
+                            <div class="ac-item">
+                                <h5 class="ac-title">BETTER COMUNICATION</h5>
+                                <div class="ac-content" style="display: none;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading-text heading-section">
+                            <h2>OUR SKILLS</h2>
+                        </div>
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="100" data-delay="100" data-type="%">
+                                <div class="progress-title">CONSULTING</div>
+                            </div>
+                        </div>
+
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="94" data-delay="200" data-type="%">
+                                <div class="progress-title">SUPPORT</div>
+                            </div>
+                        </div>
+
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="78" data-delay="300" data-type="%">
+                                <div class="progress-title">MANAGEMENT</div>
+                            </div>
+                        </div>
+
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="65" data-delay="400" data-type="%">
+                                <div class="progress-title">ECONOMY</div>
+                            </div>
+                        </div>
+
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="78" data-delay="300" data-type="%">
+                                <div class="progress-title">INVESTMENT</div>
+                            </div>
+                        </div>
+
+                        <div class="p-progress-bar-container title-up small color">
+                            <div class="p-progress-bar" data-percent="65" data-delay="400" data-type="%">
+                                <div class="progress-title">MANAGEMENT AGREEMENTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <!-- WHY CHOOSE US -->
+
+        <!-- PARALLAX -->
+        <section class="text-center text-light p-t-150 p-b-150" data-bg-parallax="web/homepages/business/images/parallax/1.jpg">
+            <div class="container">
+                <h2>PARALLAX SECTION</h2>
+                <span class="lead">Beautiful nature, and rare feathers!. amam ipsum dolor sit amet.</span>
+                <p class="lead">We offer a range of services for both businesses and individuals companies, Beautiful nature, and rare feathers!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor.</p>
+
+                <a href="#" class="btn btn-outline btn-light"><span>Learn More</span></a>
+            </div>
+        </section>
+        <!-- end: PARALLAX -->
+
+        <!-- CLIENTS -->
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>OUR CLIENTS</h2>
+                    <span class="lead">Our awesome clients we've had the pleasure to work with! </span>
+                </div>
+
+                <ul class="grid grid-5-columns">
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/1.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/2.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/3.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/4.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/5.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/6.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/7.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/8.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/9.png' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{% static 'web/images/clients/10.png' %}" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- CLIENTS -->
+
+        <!-- HISTORY -->
+        <section class="background-grey p-b-60">
+            <div class="container">
+                <div class="heading-text heading-section text-center m-b-40">
+                    <h2>COMPANY HISTORY</h2>
+                    <span class="lead">Beautiful nature, and rare feathers!. amam ipsum dolor sit amet.</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="m-b-40">
+
+
+                            <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img alt="" class="img-fluid" src="{% static 'web/homepages/business/images/office.jpg' %}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: HISTORY -->
+
+        <!-- CALL TO ACTION -->
+        <div class="call-to-action call-to-action-dark m-b-0" style="background-color: #b41525">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h3>Join by April 27 and <strong>Win $200</strong> in Programs and Services</h3>
+                        <p>This is a simple hero unit, a simple call-to-action-style component for calling extra attention to featured content.</p>
+                    </div>
+                    <div class="col-lg-2"> <a class="btn btn-outline btn-light">Call us now!</a> </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- end: CALL TO ACTION -->
+
+
+{% endblock %}
+
+    

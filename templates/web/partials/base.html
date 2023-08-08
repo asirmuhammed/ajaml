@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo, html template">
+    <link rel="icon" type="image/png"  src="{% static 'web\images\logo\logo.png-removebg-preview.png' %}">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Ajaml TP</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="{% static 'web/css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Body Inner -->
+    {% comment %} <div class="body-inner">
+    </div> {% endcomment %}
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+
+
+    {% include 'web/partials/header.html' %}
+    {% block content %}
+    {% endblock  %}
+    {% include 'web/partials/footer.html' %}
+
+
+
+    <script src="{% static 'web/plugins/jquery-steps/jquery.steps.min.js' %}"></script>
+
+    <script src="{% static 'web/plugins/gmap3/gmap3.min.js' %}"></script>
+    <script src="{% static 'web/js/jquery.js' %}"></script>
+    <script src="{% static 'web/plugins/metafizzy/infinite-scroll.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins.js' %}"></script>
+    <script src="{% static 'web/js/functions.js' %}"></script>
+</body>
+
+</html>
+        
