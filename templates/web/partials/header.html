@@ -3,7 +3,7 @@
 
 <!-- Header -->
 <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
-    <div class="header-inner bg-secondary">
+    <div class="header-inner">
         <div class="container">
             <!--Logo-->
             <div id="logo">
@@ -51,7 +51,7 @@
                 <div class="container">
                     <nav>
                         <ul>
-                            <li style="color: white;" ><a href="{% url 'web:index' %}">Home</a></li>
+                            <li style="color: gray;" ><a  class="{% if is_index %} active {% endif %}" href="{% url 'web:index' %}">Home</a></li>
                             {% comment %} <li class="dropdown"><a href="#">Layout</a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-submenu"><a href="#">Topbar</a>
@@ -243,7 +243,7 @@
                                     </li>
                                 </ul>
                             </li> {% endcomment %}
-                            <li style="color: white;" class="dropdown mega-menu-item"><a href="{% url 'web:about' %}">Profile</a>
+                            <li style="color: gray" class="dropdown mega-menu-item"><a class="{% if is_about %} active {% endif %}" href="{% url 'web:about' %}">Profile</a>
                                 {% comment %} <ul class="dropdown-menu">
                                     <li class="mega-menu-content">
                                         <div class="row">
@@ -347,7 +347,7 @@
                                     </li>
                                 </ul> {% endcomment %}
                             </li>
-                            <li style="color: white;" class="dropdown mega-menu-item"><a href="{% url 'web:gallery' %}">Gallery</a>
+                            <li style="color: gray;" class="dropdown mega-menu-item"><a class="{% if is_gallery %} active {% endif %}" href="{% url 'web:gallery' %}">Gallery</a>
                                 {% comment %} <ul class="dropdown-menu">
                                     <li class="dropdown-submenu"><span class="dropdown-menu-title-only">About us</span>
                                         <ul class="dropdown-menu">
@@ -415,7 +415,7 @@
                                     <li><a href="page-faq.html">FAQ</a></li>
                                 </ul> {% endcomment %}
                             </li>
-                            <li style="color: white;" class="dropdown mega-menu-item"><a href="{% url 'web:contact' %}">Connect</a>
+                            <li style="" class="nav-title" class="dropdown mega-menu-item"><a class="{% if is_contact %} active {% endif %}" href="{% url 'web:contact' %}">Connect</a>
                                 {% comment %} <ul class="dropdown-menu">
                                     <li class="mega-menu-content">
                                         <div class="row">
@@ -645,4 +645,5 @@
         </div>
     </div>
 </header>
+
 <!-- end: Header -->

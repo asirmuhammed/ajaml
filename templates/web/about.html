@@ -1,269 +1,398 @@
-{% extends 'web/partials/base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'web/partials/base.html' %} {% load static %} {% block content %}
 
 
-
-        {% comment %} <!-- SECTION FULLSCREEN -->
-        <section class="parallax text-light halfscreen" data-bg-parallax="{% static 'web/images/parallax/17.jpg' %}">
-            <div class="container">
-                <div class="container-fullscreen">
-                    <div class="text-middle text-center text-right">
-                        <h1 class="text-uppercase text-medium" data-animate="fadeInDown" data-animate-delay="100">John
-                            Smith</h1>
-                        <p class="lead" data-animate="fadeInDown" data-animate-delay="300">Web Designer / Developer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end: SECTION FULLSCREEN --> {% endcomment %}
-        <section>
-            <div class="container">
-                <div class="row  m-b-50">
-                    <div class="col-lg-3">
-                        <div class="heading-text heading-section">
-                            <h2>ABOUT ME</h2>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">The most happiest time of the day!. Morbi sagittis, sem quis lacinia
-                                faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
-                                consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!.
-                                Fusce id mi diam, non ornare orci. Pellentesque ipsum erat,
-                                <br>
-                                <br> facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!.
-                                Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi
-                                sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true
-                                story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum
-                                erat, facilisis ut venenatis eu, sodales vel dolor. </div>
-                            <div class="col-lg-6">Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-                                The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci
-                                ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id
-                                molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non
-                                ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-                                Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-                                <br>
-                                <br>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci
-                                ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id
-                                molestie ipsum volut.</div>
-                        </div>
-                    </div>
-                </div>
-                {% comment %} <div class="row">
-                    <div class="col-lg-3">
-                        <div class="heading-text heading-section m-b-20">
-                            <h2>My Skills</h2>
-                        </div>Lorem ipsum dolor sit ametusp endisse consectetur fringilla luctus. Fusce id mi diam, non
-                        ornare orci. Pellentesque ipsum erat,
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="m-t-60">
-                            <div class="p-progress-bar-container title-up small extra-small color">
-                                <div class="p-progress-bar" data-percent="100" data-delay="100" data-type="%">
-                                    <div class="progress-title">HTML5</div>
-                                </div>
-                            </div>
-                            <div class="p-progress-bar-container title-up small extra-small color">
-                                <div class="p-progress-bar" data-percent="94" data-delay="200" data-type="%">
-                                    <div class="progress-title">CSS3</div>
-                                </div>
-                            </div>
-                            <div class="p-progress-bar-container title-up small extra-small color">
-                                <div class="p-progress-bar" data-percent="78" data-delay="300" data-type="%">
-                                    <div class="progress-title">JQUERY</div>
-                                </div>
-                            </div>
-                            <div class="p-progress-bar-container title-up small extra-small color">
-                                <div class="p-progress-bar" data-percent="65" data-delay="400" data-type="%">
-                                    <div class="progress-title">MYSQL</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> {% endcomment %}
-            </div>
-        </section>
-        {% comment %} <!--PORTFOLIO -->
-        <section class="no-padding">
-            <!-- Portfolio -->
-            <div id="portfolio" class="grid-layout portfolio-5-columns" data-margin="0">
-                <!-- portfolio item -->
-                <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-slider">
-                            <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
-                                <a href="#"><img src="{% static 'web/images/portfolio/64.jpg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'web/images/portfolio/70.jpg' %}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/60.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a title="Paper Pouch!" data-lightbox="image" href="{% static 'web/images/portfolio/83l.jpg' %}"><i class="icon-maximize"></i></a>
-                            <a href="portfolio-page-grid-gallery.html"><i class="icon-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/61.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Let's Go Outside</h3>
-                                <span>Illustrations / Graphics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item overlay-light img-zoom ct-photography ct-media ct-branding ct-Media ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-slider">
-                            <div class="carousel dots-inside arrows-dark dots-dark" data-items="1" data-loop="true" data-autoplay="true" data-autoplay="1800">
-                                <a href="#"><img src="{% static 'web/images/portfolio/22.jpg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'web/images/portfolio/23.jpg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'web/images/portfolio/24.jpg' %}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Stockholm Fashion</h3>
-                                <span>Illustrations / Graphics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/65.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description" data-lightbox="gallery">
-                            <a title="Photoshop Mock-up!" data-lightbox="gallery-image" href="{% static 'web/images/portfolio/80l.jpg' %}"><i class="icon-copy"></i></a>
-                            <a title="Paper Pouch!" data-lightbox="gallery-image" href="{% static 'web/images/portfolio/81l.jpg' %}" class="hidden"></a>
-                            <a title="Mock-up" data-lightbox="gallery-image" href="{% static 'web/images/portfolio/82l.jpg' %}" class="hidden"></a>
-                            <a href="portfolio-page-grid-gallery.html"><i class="icon-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/66.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Last Iceland Sunshine</h3>
-                                <span>Graphics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/67.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a title="Paper Pouch!" data-lightbox="iframe" href="https://www.youtube.com/watch?v=k6Kly58LYzY"><i class="icon-play"></i></a>
-                            <a href="portfolio-page-grid-gallery.html"><i class="icon-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-slider">
-                            <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
-                                <a href="#"><img src="{% static 'web/images/portfolio/68.jpg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'web/images/portfolio/71.jpg' %}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/69.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Luxury Wine</h3>
-                                <span>Graphics / Branding</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/70.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Last Iceland Sunshine</h3>
-                                <span>Graphics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-                <!-- portfolio item -->
-                <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-image">
-                            <a href="#"><img src="{% static 'web/images/portfolio/72.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="portfolio-description">
-                            <a href="portfolio-page-grid-gallery.html">
-                                <h3>Towel World</h3>
-                                <span>Graphics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: portfolio item -->
-            </div>
-            <!-- end: Portfolio -->
-        </section>
-        <!--END: PORTFOLIO -->
-        <hr class="space">
-        <hr class="space">
-        <div class="call-to-action cta-center">
-            <div class="col-lg-10">
-                <h3>Ready to buy POLO Template?</h3>
-                <p>This is a simple hero unit, a simple call-to-action-style component for calling extra attention to
-                    featured content.</p>
-            </div>
-            <div class="col-lg-2">
-                <a class="btn" href="#">Buy now!</a> </div>
+<section>
+  <div class="container">
+    <div class="row m-b-50">
+      <div class="col-lg-3">
+        <div class="heading-text heading-section">
+          <h2>ABOUT ME</h2>
         </div>
-        <hr class="space"> {% endcomment %}
-
-
-{% endblock %}
-        
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            Welcome to the world of Ajmal TP a Free-thinking Fusionpreneur,
+            Concept Consultant, and Performing Presenter who is all about
+            igniting growth and innovation in unconventional ways. With a
+            diverse and rich journey spanning over a decade, Ajmal has donned
+            various ambitious hats, leaving his mark in multiple domains
+            <br />
+            <br />
+            He's a serial and serious entrepreneur who has amassed a treasure
+            trove of golden learning experiences across a range of
+            out-of-the-box domains. His journey has brought him close to leading
+            Corporates, MSME’s, Start-ups, and Individuals, where he lends his
+            expertise as a Consultant, Mentor, and Strategist. What sets him
+            apart is his passion for delivering outstanding presentations that
+            revolve around crystal clear careers and brand elevation from
+            entirely fresh perspectives.
+          </div>
+          <div class="col-lg-6">
+            A visionary Leader and Team Player, Ajmal boasts vibrant experiences
+            in unconventional Project Management and insightful Market Research.
+            His interests run deep in exploring innovative avenues for the
+            development and deployment of future-proof businesses.
+            Conceptualization, Visualization, Realization, and Systematic
+            Research are not just areas of interest, but his areas of expertise.
+            <br />
+            <br />In a world where innovation is the name of the game, Ajmal TP
+            emerges as a force to be reckoned with. His journey is a testament
+            to his unwavering commitment to carving a unique path in the world
+            of entrepreneurship, consulting, and presenting. Stay tuned as Ajmal
+            continues to shape the future with his unconventional approach and
+            visionary mindset.
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="heading-text heading-section m-b-20">
+          <h2>My Skills</h2>
+        </div>
+        Lorem ipsum dolor sit ametusp endisse consectetur fringilla luctus.
+        Fusce id mi diam, non ornare orci. Pellentesque ipsum erat,
+      </div>
+      <div class="col-lg-9">
+        <div class="m-t-60">
+          <div
+            class="p-progress-bar-container title-up small extra-small color"
+          >
+            <div
+              class="p-progress-bar"
+              data-percent="100"
+              data-delay="100"
+              data-type="%"
+            >
+              <div class="progress-title">HTML5</div>
+            </div>
+          </div>
+          <div
+            class="p-progress-bar-container title-up small extra-small color"
+          >
+            <div
+              class="p-progress-bar"
+              data-percent="94"
+              data-delay="200"
+              data-type="%"
+            >
+              <div class="progress-title">CSS3</div>
+            </div>
+          </div>
+          <div
+            class="p-progress-bar-container title-up small extra-small color"
+          >
+            <div
+              class="p-progress-bar"
+              data-percent="78"
+              data-delay="300"
+              data-type="%"
+            >
+              <div class="progress-title">JQUERY</div>
+            </div>
+          </div>
+          <div
+            class="p-progress-bar-container title-up small extra-small color"
+          >
+            <div
+              class="p-progress-bar"
+              data-percent="65"
+              data-delay="400"
+              data-type="%"
+            >
+              <div class="progress-title">MYSQL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+  </div>
+</section>
+{% comment %}
+<!--PORTFOLIO -->
+<section class="no-padding">
+  <!-- Portfolio -->
+  <div id="portfolio" class="grid-layout portfolio-5-columns" data-margin="0">
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-slider">
+          <div
+            class="carousel dots-inside dots-dark arrows-dark"
+            data-items="1"
+            data-loop="true"
+            data-autoplay="true"
+            data-animate-in="fadeIn"
+            data-animate-out="fadeOut"
+            data-autoplay="1500"
+          >
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/64.jpg' %}" alt=""
+            /></a>
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/70.jpg' %}" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/60.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a
+            title="Paper Pouch!"
+            data-lightbox="image"
+            href="{% static 'web/images/portfolio/83l.jpg' %}"
+            ><i class="icon-maximize"></i
+          ></a>
+          <a href="portfolio-page-grid-gallery.html"
+            ><i class="icon-link"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item large-width img-zoom ct-photography ct-media ct-branding ct-Media"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/61.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Let's Go Outside</h3>
+            <span>Illustrations / Graphics</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item overlay-light img-zoom ct-photography ct-media ct-branding ct-Media ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-slider">
+          <div
+            class="carousel dots-inside arrows-dark dots-dark"
+            data-items="1"
+            data-loop="true"
+            data-autoplay="true"
+            data-autoplay="1800"
+          >
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/22.jpg' %}" alt=""
+            /></a>
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/23.jpg' %}" alt=""
+            /></a>
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/24.jpg' %}" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Stockholm Fashion</h3>
+            <span>Illustrations / Graphics</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/65.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description" data-lightbox="gallery">
+          <a
+            title="Photoshop Mock-up!"
+            data-lightbox="gallery-image"
+            href="{% static 'web/images/portfolio/80l.jpg' %}"
+            ><i class="icon-copy"></i
+          ></a>
+          <a
+            title="Paper Pouch!"
+            data-lightbox="gallery-image"
+            href="{% static 'web/images/portfolio/81l.jpg' %}"
+            class="hidden"
+          ></a>
+          <a
+            title="Mock-up"
+            data-lightbox="gallery-image"
+            href="{% static 'web/images/portfolio/82l.jpg' %}"
+            class="hidden"
+          ></a>
+          <a href="portfolio-page-grid-gallery.html"
+            ><i class="icon-link"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/66.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Last Iceland Sunshine</h3>
+            <span>Graphics</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/67.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a
+            title="Paper Pouch!"
+            data-lightbox="iframe"
+            href="https://www.youtube.com/watch?v=k6Kly58LYzY"
+            ><i class="icon-play"></i
+          ></a>
+          <a href="portfolio-page-grid-gallery.html"
+            ><i class="icon-link"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-slider">
+          <div
+            class="carousel dots-inside dots-dark arrows-dark"
+            data-items="1"
+            data-loop="true"
+            data-autoplay="true"
+            data-animate-in="fadeIn"
+            data-animate-out="fadeOut"
+            data-autoplay="1500"
+          >
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/68.jpg' %}" alt=""
+            /></a>
+            <a href="#"
+              ><img src="{% static 'web/images/portfolio/71.jpg' %}" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/69.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Luxury Wine</h3>
+            <span>Graphics / Branding</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/70.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Last Iceland Sunshine</h3>
+            <span>Graphics</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+    <!-- portfolio item -->
+    <div
+      class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign"
+    >
+      <div class="portfolio-item-wrap">
+        <div class="portfolio-image">
+          <a href="#"
+            ><img src="{% static 'web/images/portfolio/72.jpg' %}" alt=""
+          /></a>
+        </div>
+        <div class="portfolio-description">
+          <a href="portfolio-page-grid-gallery.html">
+            <h3>Towel World</h3>
+            <span>Graphics</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end: portfolio item -->
+  </div>
+  <!-- end: Portfolio -->
+</section>
+<!--END: PORTFOLIO -->
+<hr class="space" />
+<hr class="space" />
+<div class="call-to-action cta-center">
+  <div class="col-lg-10">
+    <h3>Ready to buy POLO Template?</h3>
+    <p>
+      This is a simple hero unit, a simple call-to-action-style component for
+      calling extra attention to featured content.
+    </p>
+  </div>
+  <div class="col-lg-2">
+    <a class="btn" href="#">Buy now!</a>
+  </div>
+</div>
+<hr class="space" />
+{% endcomment %} {% endblock %}

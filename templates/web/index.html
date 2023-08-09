@@ -3,24 +3,24 @@
 {% block content %}
 
         <!-- Inspiro Slider -->
-        <div id="slider" class="inspiro-slider slider-halfscreen dots-dark arrows-dark dots-creative" data-fade="true" data-height-xs="360">
+        {% comment %} <div id="slider" class="inspiro-slider slider-halfscreen dots-dark arrows-dark dots-creative" data-fade="true" data-height-xs="360"> {% endcomment %}
 
             <!-- Slide 1 -->
-            <div class="slide background-image" style="background-image:url('{% static 'web/homepages/business/images/slide1.jpg' %}');">
+            <div class="slide-background-image"  style="background-image:url('{% static 'web/homepages/business/images/slide1.jpg' %}');" >
                 <div class="container">
                     <div class="slide-captions text-right">
                         <!-- Captions -->
-                        <span class="strong text-dark">Ajmal TP</span>
-                        <h2  class="text-dark text-bg">Free-thinking Fusionpreneur </h2>
-                        <a class="btn btn-dark" href="{% url 'web:contact' %}" >Get in Touch</a>
+                        <span class="aj" class="strong text-dark"><h4>Ajmal TP</h4></span>
+                        <h2 id="title" ></h2>
+                        <a class="btn btn-dark"  href="{% url 'web:contact' %}" >Get in Touch</a>
                         <!-- end: Captions -->
                     </div>
                 </div>
             </div>
             <!-- end: Slide 1 -->
 
-            <!-- Slide 2 -->
-            <div class="slide" style="background-image:url('{% static 'web/homepages/business/images/slide2.jpg' %}');">
+            {% comment %} <!-- Slide 2 -->
+            <div  class="slide background-image" style="background-image:url('{% static 'web/homepages/business/images/slide1.jpg' %}');">
                 <div class="container">
                     <div class="slide-captions text-right">
                         <!-- Captions -->
@@ -45,11 +45,11 @@
                         <!-- end: Captions -->
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
             <!-- end: Slide 3 -->
 
 
-        </div>
+        {% comment %} </div> {% endcomment %}
         <!--end: Inspiro Slider -->
 
 

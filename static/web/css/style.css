@@ -1172,13 +1172,15 @@ section.dark,
   z-index: 1;
   transition: all 0.4s ease-in-out;
   height: 80px;
+  color:#ecf1f5;
 }
 #header .header-inner #logo a > img,
 #header #header-wrap #logo a > img {
   vertical-align: inherit;
   transition: all 0.4s ease-in-out;
-  height: 80px;
+  height: 65px;
   width: auto;
+  margin-top: 10px;
 }
 #header .header-inner #logo a > img,
 #header .header-inner #logo a [class*="logo-"],
@@ -1576,7 +1578,7 @@ section.dark,
 #mainMenu nav > ul > li:hover > span,
 #mainMenu nav > ul > li:focus > a,
 #mainMenu nav > ul > li:focus > span {
-  color: #2250fc;
+  color: black;
 }
 #mainMenu nav > ul > li.dropdown:before {
   content: "\e930";
@@ -2180,7 +2182,8 @@ section.dark,
 }
 .dark #mainMenu nav > ul > li > a,
 #mainMenu.dark nav > ul > li > a {
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(87, 77, 77);
 }
 .dark #mainMenu nav > ul > li.hover-active > a,
 .dark #mainMenu nav > ul > li.hover-active > span,
@@ -2198,7 +2201,7 @@ section.dark,
 #mainMenu.dark nav > ul > li:hover > span,
 #mainMenu.dark nav > ul > li:focus > a,
 #mainMenu.dark nav > ul > li:focus > span {
-  color: #e2e2e2;
+  color: rgb(0, 0, 0);
 }
 .dark #mainMenu nav > ul > li.dropdown:before,
 #mainMenu.dark nav > ul > li.dropdown:before {
@@ -10999,7 +11002,7 @@ button.btn,
 a.btn:not([href]):not([tabindex]) {
   font-family: "Poppins", sans-serif;
   border-radius: 5px 5px 5px 5px;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -11017,6 +11020,7 @@ a.btn:not([href]):not([tabindex]) {
   outline: none;
   line-height: 14px;
   cursor: pointer;
+  margin-top:5px;
 }
 button.btn:after,
 .btn:not(.close):not(.mfp-close):after,
@@ -17840,7 +17844,4 @@ body[data-bg-image] {
   color: #333 !important;
 }
 
-#p{
-color:black;
-font-weight:400;
-}
+
