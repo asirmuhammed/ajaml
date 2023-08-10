@@ -4565,7 +4565,7 @@ h5,
 }
 h5:not(:last-child),
 .h5:not(:last-child) {
-  margin-bottom: 6px;
+  margin-bottom: -25px;
 }
 h6,
 .h6 {
@@ -11002,7 +11002,7 @@ button.btn,
 a.btn:not([href]):not([tabindex]) {
   font-family: "Poppins", sans-serif;
   border-radius: 5px 5px 5px 5px;
-  font-size: 25px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -13569,6 +13569,7 @@ div.icon-box:before {
 .icon-box {
   margin-bottom: 50px;
   position: relative;
+  right: 75px;
 }
 .icon-box .icon {
   height: 64px;

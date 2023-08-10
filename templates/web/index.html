@@ -10,7 +10,7 @@
                 <div class="container">
                     <div class="slide-captions text-right">
                         <!-- Captions -->
-                        <span class="aj" class="strong text-dark"><h4>Ajmal TP</h4></span>
+                        <span class="aj" class="strong text-dark">Ajmal TP</span>
                         <h2 id="title" ></h2>
                         <a class="btn btn-dark"  href="{% url 'web:contact' %}" >Get in Touch</a>
                         <!-- end: Captions -->
@@ -79,9 +79,9 @@
 
                 <div class="row">
                     {% for nutshell in nutshell %}
-                    <div class="col-lg-4">
-                        <div class="icon-box medium fancy">
-                            <div class="icon"> <a href="#"><i class="fa fa-car"></i></a> </div>
+                    <div class="col-lg-4" >
+                        <div class="icon-box medium fancy" class="nutshell" >
+                            {% comment %} <div class="icon"> <a href="#"><i class="fa fa-car"></i></a> </div> {% endcomment %}
                             <h4>{{nutshell.heading}}</h4>
                             <p>{{nutshell.detail}}</p>
                         </div>
@@ -136,8 +136,8 @@
                         
                         <h2>GROWTH YOUR BUSINESS!</h2>
                         {% comment %} <span class="lead">Beautiful nature, and rare feathers!. amam ipsum dolor sit amet.</span> {% endcomment %}
-                        <p id="p" >Clear Business Strategy: Develop a well-defined and adaptable business strategy that outlines your goals, target market,</p>
-                        <p id="p" >Customer Focus: Understand your customers' needs and preferences to tailor your products/services and marketing efforts accordingly.</p>
+                        <p id="p" >Clear Business Strategy: Develop a well-defined and adaptable business strategy that outlines your goals, target market,
+                        Customer Focus: Understand your customers' needs and preferences to tailor your products/services and marketing efforts accordingly.</p>
                     
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <div class="icon"><i class="fa fa-3x fa-code"></i></div>
                             <div class="counter"> <span data-speed="3000" data-refresh-interval="50" data-to="12416" data-from="600" data-seperator="true"></span><h3>2015-2018</h3> </div>
                             <div class="seperator seperator-small"></div>
-                            <p><h4>Finishing Versity Founding Chief</h4></p> 
+                            <p class="h5"><h5>Finishing Versity Founding Chief</h5></p> 
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@
                             <div class="icon"><i class="fa fa-3x fa-coffee"></i></div>
                             <div class="counter"> <span data-speed="4500" data-refresh-interval="23" data-to="365" data-from="100" data-seperator="true"></span> <h3>2015-2018</h3></div>
                             <div class="seperator seperator-small"></div>
-                            <p><h4>Career Guru Administrator </h4></p>
+                            <p class="h5"><h5>Career Guru Administrator </h5></p>
                         </div>
                     </div>
 
@@ -174,7 +174,7 @@
                             <div class="icon"><i class="fa fa-3x fa-rocket"></i></div>
                             <div class="counter"> <span data-speed="3000" data-refresh-interval="12" data-to="114" data-from="50" data-seperator="true"></span><h3>2015-2018</h3> </div>
                             <div class="seperator seperator-small"></div>
-                            <p><h4>Book Ramp Publisher</h4> </p>
+                            <p class="h5"><h5>Book Ramp Publisher</h5> </p>
                         </div>
                     </div>
                     

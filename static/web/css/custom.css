@@ -47,7 +47,26 @@
  
 } */
 
-.aj{
-    margin-bottom: 80px;
 
+
+.active {
+  background:#ffc107;
+  overflow:hidden;
+  
+}
+.aj{
+  position: relative;
+  bottom: -140px;
+}
+
+.nutshell{
+  margin-right: 30px;
+}
+
+li a{
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  
 }

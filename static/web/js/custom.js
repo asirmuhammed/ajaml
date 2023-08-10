@@ -13,3 +13,12 @@ typewriter.typeString('Free-thinking Fusionpreneur')
     .typeString('<strong>Performing Presenter</strong>')
     .pauseFor(2500)
     .start();
+
+    
+    $(document).ready(function () {
+  
+        $(".one").click(function (){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+      
