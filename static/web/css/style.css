@@ -8,7 +8,7 @@ body .body-inner {
 }
 body .container-wide {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 60px;
 }
 @media (max-width: 1024px) {
@@ -1423,7 +1423,7 @@ section.dark,
 #header.dark #header-wrap .lines,
 #header.dark #header-wrap .lines:before,
 #header.dark #header-wrap .lines:after {
-  background-color: #fff;
+  background-color: black;
 }
 .dark #header[data-transparent="true"]:not(.sticky-active) .header-inner,
 .dark #header[data-transparent="true"]:not(.sticky-active) #header-wrap,
@@ -9384,9 +9384,9 @@ div.dataTables_wrapper div.dataTables_length select {
 .m-b-100 {
   margin-bottom: 100px !important;
 }
-.m-b-150 {
+/* .m-b-150 {
   margin-bottom: 150px !important;
-}
+} */
 .m-b-200 {
   margin-bottom: 200px !important;
 }
@@ -13599,7 +13599,7 @@ div.icon-box:before {
 .icon-box p {
   margin: 0 0 20px 83px;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 25px;
   font-weight: 400;
 }
 .icon-box-description > p {

@@ -57,6 +57,8 @@
 .aj{
   position: relative;
   bottom: -140px;
+  font-weight: 500;
+  font-size: medium;
 }
 
 .nutshell{
@@ -65,8 +67,51 @@
 
 li a{
   text-decoration: none;
+
+}
+
+
+.font{
+  font-size:50px;
+}
+
+.heading{
+  font-size: 18px;
 }
 
 @media (max-width: 576px) {
-  
+ 
+  #title{
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 110px;
+  }
+  .padding{
+    padding: 20px;
+  }
+  #aj{
+    margin-right: 250px;
+  }
+  .heading{
+    font-size: 15px;
+  }
+  #about{
+    margin-left: 60px;
+  }
+  .switch{
+    margin-right: 180px;
+  }
+  .aj{
+    margin-right:220px;
+  }
+  /* .nutshell{
+    margin-left: 50px;
+  }
+} */
+}
+.social-media-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
 }

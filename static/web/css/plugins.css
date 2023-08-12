@@ -554,6 +554,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  font-size: 15px;
 }
 .no-gutters {
   margin-right: 0;

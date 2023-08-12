@@ -9,7 +9,7 @@
             <div id="logo">
                 <a href="{% url 'web:index' %}">
                     {% comment %} <span class="logo-default">POLO</span> {% endcomment %}
-                    <img src="{% static 'web\images\logo\logo.png-removebg-preview.png' %}">
+                    <img id="aj" src="{% static 'web\images\logo\logo.png-removebg-preview.png' %}">
                     {% comment %} <span class="logo-default">POLO</span> {% endcomment %}
                 </a>
             </div>
@@ -42,8 +42,10 @@
             </div>
             <!--end: Header Extras--> {% endcomment %}
             <!--Navigation Resposnive Trigger-->
-            <div id="mainMenu-trigger">
-                <a class="lines-button x"><span class="lines"></span></a>
+            <div  id="mainMenu-trigger">
+                {% comment %} <a  class="lines-button x"><span class="lines"></span></a>  {% endcomment %}
+                <a  class="lines-button x"><i class="fa-solid fa-bars lines"></i></a> 
+              {% comment %} <i class="fa-solid fa-bars"></i>  {% endcomment %}
             </div>
             <!--end: Navigation Resposnive Trigger-->
             <!--Navigation-->
@@ -243,7 +245,7 @@
                                     </li>
                                 </ul>
                             </li> {% endcomment %}
-                            <li style="color: gray" class="dropdown mega-menu-item"><a class="{% if is_about %} active {% endif %}" href="{% url 'web:about' %}">Profile</a>
+                            <li style="color: gray" class="mega-menu-item"><a class="{% if is_about %} active {% endif %}" href="{% url 'web:about' %}">Profile</a>
                                 {% comment %} <ul class="dropdown-menu">
                                     <li class="mega-menu-content">
                                         <div class="row">
@@ -347,7 +349,7 @@
                                     </li>
                                 </ul> {% endcomment %}
                             </li>
-                            <li style="color: gray;" class="dropdown mega-menu-item"><a class="{% if is_gallery %} active {% endif %}" href="{% url 'web:gallery' %}">Gallery</a>
+                            <li style="color: gray;" class="mega-menu-item"><a class="{% if is_gallery %} active {% endif %}" href="{% url 'web:gallery' %}">Gallery</a>
                                 {% comment %} <ul class="dropdown-menu">
                                     <li class="dropdown-submenu"><span class="dropdown-menu-title-only">About us</span>
                                         <ul class="dropdown-menu">

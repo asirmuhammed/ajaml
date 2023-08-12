@@ -10,9 +10,9 @@
                 <div class="container">
                     <div class="slide-captions text-right">
                         <!-- Captions -->
-                        <span class="aj" class="strong text-dark">Ajmal TP</span>
+                        <span class="aj" class="strong text-dark aj">Ajmal TP</span>
                         <h2 id="title" ></h2>
-                        <a class="btn btn-dark"  href="{% url 'web:contact' %}" >Get in Touch</a>
+                        <a class="btn btn-dark switch "  href="{% url 'web:contact' %}" >Get in Touch</a>
                         <!-- end: Captions -->
                     </div>
                 </div>
@@ -56,12 +56,12 @@
         <!-- MISSION & VISSION -->
         <section class="box-fancy section-fullwidth text-light no-padding">
             <div class="row">
-                <div class="col-lg-6 text-right" style="background-color: #ffc107">
+                <div class="col-lg-6 text-left" style="background-color: #ffc107">
                     <h2>OUR MISSION</h2>
                     <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. </span>
                 </div>
 
-                <div class="col-lg-6 text-left" style="background-color: #ffc107c4">
+                <div class="col-lg-6 text-right" style="background-color: #ffc107c4">
                     <h2>OUR VISSION</h2>
                     <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. </span>
                 </div>
@@ -79,10 +79,11 @@
 
                 <div class="row">
                     {% for nutshell in nutshell %}
-                    <div class="col-lg-4" >
-                        <div class="icon-box medium fancy" class="nutshell" >
+                    <div class="col-lg-4 " >
+                        <div class="icon-box medium fancy" class="nutshell text-center" >
                             {% comment %} <div class="icon"> <a href="#"><i class="fa fa-car"></i></a> </div> {% endcomment %}
-                            <h4>{{nutshell.heading}}</h4>
+                            <h4 class="text-center heading"  >{{nutshell.heading}}</h4>
+                            {% comment %} <p class="text-center"></p> {% endcomment %}
                             <p>{{nutshell.detail}}</p>
                         </div>
                     </div>
@@ -144,7 +145,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-center">
 
-                        <div class="text-center">
+                        <div class="padding">
 
                             
                             <div class="icon"><i class="fa fa-3x fa-code"></i></div>
@@ -156,7 +157,7 @@
 
                     <div class="col-lg-4 text-center">
 
-                        <div class="text-center">
+                        <div class="padding">
 
                             
                             <div class="icon"><i class="fa fa-3x fa-coffee"></i></div>
@@ -168,7 +169,7 @@
 
                     <div class="col-lg-4 text-center">
 
-                        <div class="text-center">
+                        <div class="padding">
 
                             
                             <div class="icon"><i class="fa fa-3x fa-rocket"></i></div>

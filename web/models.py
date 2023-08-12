@@ -1,5 +1,9 @@
 from django.db import models
 
+
+
+
+
 # Create your models here.
 class Contact(models.Model):
     name = models.CharField(max_length=120)
@@ -12,8 +16,7 @@ class Contact(models.Model):
     
 class Nutshell(models.Model):
     heading=models.CharField(max_length=30)
-    detail=models.CharField(max_length=160)
-    
+    detail= models.CharField(max_length=400)
     def __str__(self):
         return self.heading
     
